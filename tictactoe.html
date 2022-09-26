@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initialDraw()">
+    <h1>TIC TAC TOE</h1>
+    <div class="gameState">
+        <div class="gameRow firstRow">
+            <button class="firstBtn diagonalOne gameBtn" onclick="gameBtnClick(0)"></button>
+            <button class="secondBtn gameBtn" onclick="gameBtnClick(1)"></button>
+            <button class="thirdBtn diagonalTwo gameBtn" onclick="gameBtnClick(2)"></button>
+        </div>
+        <div class="horizontalBorder"></div>
+        <div class="gameRow secondRow">
+            <button class="firstBtn gameBtn" onclick="gameBtnClick(3)"></button>
+            <button class="secondBtn diagonalOne diagonalTwo gameBtn" onclick="gameBtnClick(4)"></button>
+            <button class="thirdBtn gameBtn"
+                    onclick="gameBtnClick(5)"></button>
+        </div>
+        <div class="horizontalBorder"></div>
+        <div class="gameRow thirdRow">
+            <button class="firstBtn diagonalTwo gameBtn" onclick="gameBtnClick(6)"></button>
+            <button class="secondBtn gameBtn" onclick="gameBtnClick(7)"></button>
+            <button class="thirdBtn diagonalOne gameBtn" onclick="gameBtnClick(8)"></button>
+        </div>
+    </div>
+    <h2 id="currentPlayer">TURN:</h2>
+    <button id="newGameBtn" onclick="newGame()">New game</button>
+    <script src="tictactoe.js"></script>
+</body>
+</html>

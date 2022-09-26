@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gameBtn {
+    background-color: white;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 2rem 3rem;
+    width: 8rem;
+    height: 8rem;
+}
+
+.horizontalBorder {
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.firstBtn {
+    border-right: 2px solid black;
+}
+
+.thirdBtn {
+    border-left: 2px solid black;
+}
